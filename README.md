@@ -1,68 +1,74 @@
-# 🔐 Microsoft Entra ID & Secure Access - Identity Mastery Labs
+# 🔐 Microsoft Cloud Security & Identity Mastery (SC-900 / Entra ID)
 
-**Repository Description:** A specialized engineering log dedicated to implementing a comprehensive **Zero Trust security strategy** using the Microsoft Entra product family. This repository serves as a practical blueprint for verifying identities, validating access conditions, securing connection channels, and managing governance across multi-cloud environments.
-
----
-
-## 🗺️ Identity & Network Access Roadmap
-
-### 📂 01. Directory Core & Architecture
-Setting up the administrative foundation and solving tenant authentication conflicts.
-
-| Feature / Product | Status | Lab Objective & Task |
-| :--- | :---: | :--- |
-| **Tenant Provisioning** | ✅ | Deploying an independent Developer Sandbox environment with initial domain configurations. |
-| **Session Isolation** | ✅ | Troubleshooting cross-tenant token conflicts (`AADSTS16000` / `403 Access` error) using Incognito session routing. |
-| **Entra Domain Services** | ⏳ | Provisioning managed legacy domain services (LDAP/Kerberos) for legacy cloud-hosted applications. |
-
-**Current Progress:** ██████░░░░ 60% ⚙️
+**Repository Description:** A hands-on engineering log and learning roadmap focused on Microsoft Security, Compliance, and Identity (SCI) ecosystems. This repository documents technical configurations, Zero Trust architectures, and directory management strategies mapped directly to Microsoft's official learning paths.
 
 ---
 
-### 📂 02. Identity Governance & Lifecycle Management
-Automating access controls and safeguarding the employee lifecycle from onboarding to offboarding.
+## 🗺️ Learning Roadmap & Progress
 
-| Feature / Product | Status | Lab Objective & Task |
+### 📂 00. Primer: Cybersecurity Concepts
+Foundational knowledge required before deep-diving into cloud-specific environments.
+
+| Learning Module | Status | Core Objective / Hands-on |
 | :--- | :---: | :--- |
-| **User & Group Provisioning** | ⏳ | Building structured directories, establishing Security Groups (`IT-Support`), and practicing bulk CSV imports. |
-| **Identity Governance** | ⏳ | Automating dynamic user lifecycle tasks, access requests, and license assignments. |
-| **Verified ID** | ⏳ | Issuing and validating decentralized identities (DID) and open-standard verifiable credentials. |
+| Describe the concepts of cybersecurity | ✅ | Understanding threat landscapes, encryption vectors, and defense-in-depth |
 
-**Current Progress:** ░░░░░░░░░░ 0% 👥
+**Current Progress:** ██████████ 100% 🎯
 
 ---
 
-### 📂 03. Identity Protection & Access Control (RBAC)
-Enforcing boundaries based on context, risk levels, and the Principle of Least Privilege (PoLP).
+### 📂 01. Security, Compliance, and Identity Concepts
+The core methodology that guides all cloud architecture configurations.
 
-| Feature / Product | Status | Lab Objective & Task |
+| Learning Module | Status | Core Objective / Hands-on |
 | :--- | :---: | :--- |
-| **Role-Based Access (RBAC)** | ⏳ | Assigning granular built-in roles (e.g., `User Administrator`) to security groups. |
-| **ID Protection & MFA** | ⏳ | Enabling tenant-wide Security Defaults and setting risk-based Conditional Access policies. |
+| Part 1: Introduction to security, compliance, and identity concepts | ✅ | Deep dive into Zero Trust principles, Shared Responsibility Model, and Sovereign Cloud concepts |
+| Cross-Tenant Troubleshooting | ✅ | Isolating session routing and fixing `AADSTS16000` loops via independent sandbox provisioning |
+
+**Current Progress:** ██████████ 100% 🚀
+
+---
+
+### 📂 02. Identity and Access Management with Microsoft Entra
+Deep dive into enterprise directory management and secure authentication perimeters.
+
+| Learning Module | Status | Core Objective / Hands-on |
+| :--- | :---: | :--- |
+| Part 2: Introduction to Microsoft Entra | ⏳ | Mastering Entra ID Fundamentals, Domain Services, and External Identities |
+| Directory Structures | ⏳ | Building structured directories, Security Groups (`IT-Support`), and practicing custom administrative scoping |
+| Advanced Modern Authentication | ⏳ | Implementing risk-based Conditional Access, MFA, and modern secure network parameters (Private/Internet Access) |
+
+**Current Progress:** ░░░░░░░░░░ 0% 🔑
+
+---
+
+### 📂 03. Microsoft Security Solutions
+Protecting cloud infrastructure and computing workloads from complex attack vectors.
+
+| Learning Module | Status | Core Objective / Hands-on |
+| :--- | :---: | :--- |
+| Part 3: Introduction to Microsoft security solutions | ⏳ | Exploring Microsoft Defender XDR, Azure Sentinel, and cloud security posture management (CSPM) |
 
 **Current Progress:** ░░░░░░░░░░ 0% 🛡️
 
 ---
 
-### 📂 04. Advanced Network Access & Non-Human Identities (Zero Trust Perimeter)
-Extending corporate security to external users, network channels, programmatic workloads, and AI agents.
+### 📂 04. Microsoft Purview & Privacy Principles
+Data governance, compliance validation, and tracking information life cycles.
 
-| Feature / Product | Status | Lab Objective & Task |
+| Learning Module | Status | Core Objective / Hands-on |
 | :--- | :---: | :--- |
-| **Private & Internet Access** | ⏳ | Securing SaaS apps via web filtering and configuring remote resource connections without a VPN. |
-| **External ID** | ⏳ | Designing secure self-service registration and B2B/B2C guest collaboration workflows. |
-| **Workload ID** | ⏳ | Managing application/container permissions and securing automated workflows (e.g., GitHub Actions). |
-| **Agent ID** | ⏳ | Setting up identity frameworks, auditing, and least-privilege governance for autonomous AI agents. |
+| Part 4: Introduction to Microsoft Purview and Microsoft's privacy principles | ⏳ | Understanding data classification, sensitivity labels, prevention of data leakage, and compliance portals |
 
-**Current Progress:** ░░░░░░░░░░ 0% 🤖
+**Current Progress:** ░░░░░░░░░░ 0% 📊
 
 ---
 
-## 🛠️ Management, Development & Automation
-To administration and interface testing, these labs leverage:
-* **Microsoft Entra Admin Center:** For graphical configuration and centralized visibility.
-* **Microsoft Graph API:** For automating administrative tasks, lifecycle workflows, and bulk deployment scripts.
-* **Microsoft Identity Platform:** For exploring open-source authentication integration into custom apps.
+## 🛠️ Laboratory Environment & Operations Log
+
+All technical operations are executed inside a standalone production-grade environment:
+* **Directory Tier:** Microsoft 365 Developer Sandbox (Independent Corporate Tenant).
+* **Identity Management Controls:** Handled via Microsoft Entra Admin Center, Microsoft Graph API, and Microsoft Identity Platform structures.
 
 ---
 **Last Updated:** 2026-07-01 ⚡
